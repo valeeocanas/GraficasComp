@@ -1,0 +1,154 @@
+
+<html>
+ <head>
+  <script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById("canvas");
+      if (canvas.getContext) {
+        var ctx = canvas.getContext("2d");
+	
+	//BASE CASA
+        ctx.fillStyle = "rgb(192,192,192)";
+        ctx.fillRect (280,170, 320,500);
+        
+	//BASE CASA
+        ctx.fillStyle = "rgb(200,100,0)";
+        ctx.fillRect (630,290, 240,380);
+	
+	//BASE CASA
+        ctx.fillStyle = "rgb(200,100,0)";
+        ctx.fillRect (900,260, 350,410);
+	
+	ctx.fillStyle = "rgb(192,192,192)";
+        ctx.fillRect (900,320, 350,80);
+
+	ctx.fillStyle = "rgb(192,192,192)";
+        ctx.fillRect (1050,590, 50,80);
+
+
+
+	//BASE CALLE
+        ctx.fillStyle = "rgb(192,192,192)";
+        ctx.fillRect (0, 730, 1240,150);
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (40, 790, 80,30);
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (160, 790, 80,30);
+	
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (280, 790, 80,30);	
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (400, 790, 80,30);	
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (520, 790, 80,30);	
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (640, 790, 80,30);	
+	
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (760, 790, 80,30);	
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (880, 790, 80,30);	
+
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (1000, 790, 80,30);	
+	
+	//LINEAS CALLE
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fillRect (1120, 790, 80,30);
+
+	//SOL
+	ctx.beginPath();
+        ctx.arc(1150,110,95,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(255,255,0)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(1150,170,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(1100,180,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(1140,205,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(1170,195,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(1090,205,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(1070,185,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+
+
+	//ARBOL
+	ctx.fillStyle = "rgb(134,41,20)";
+        ctx.fillRect (100,520, 30,150);
+
+
+	ctx.beginPath();
+        ctx.arc(90,520,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(34,139,34)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(140,520,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(34,139,34)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(165,480,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(34,139,34)";
+        ctx.fill(); 
+
+	ctx.beginPath();
+        ctx.arc(80,480,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(34,139,34)";
+        ctx.fill(); 
+
+	ctx.beginPath();
+        ctx.arc(120,440,50,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(34,139,34)";
+        ctx.fill(); 
+
+
+	// CUADO MUESTRA
+        //ctx.fillStyle = "rgb(200,200,0)";
+        //ctx.fillRect (450,450, 50,50);
+
+      }
+    }
+  </script>
+ </head>
+ <body onload="draw();">
+   <canvas id="canvas" width="1500" height="1500"></canvas>
+ </body>
+</html>
