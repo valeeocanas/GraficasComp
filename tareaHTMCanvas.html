@@ -7,24 +7,81 @@
       if (canvas.getContext) {
         var ctx = canvas.getContext("2d");
 	
-	//BASE CASA
+	//BASE DEPARTAMENTO
         ctx.fillStyle = "rgb(192,192,192)";
         ctx.fillRect (280,170, 320,500);
+
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (320,250, 50,80);
         
-	//BASE CASA
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (415,250, 50,80);
+
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (510,250, 50,80);
+
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (320,400, 50,80);
+        
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (415,400, 50,80);
+
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (510,400, 50,80);
+
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (320,550, 50,80);
+
+	ctx.fillStyle = "rgb(176,224,230)";
+        ctx.fillRect (510,550, 50,80);
+
+	ctx.fillStyle = "rgb(169,169,169)";
+        ctx.fillRect (390,530, 100,140);
+
+	ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fillRect (430,590, 8,20);
+
+	ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fillRect (445,590, 8,20);
+
+
+	//BASE EDIFICIO
         ctx.fillStyle = "rgb(200,100,0)";
         ctx.fillRect (630,290, 240,380);
 	
-	//BASE CASA
-        ctx.fillStyle = "rgb(200,100,0)";
+	ctx.fillStyle = "rgb(161,80,0)";
+        ctx.fillRect (700,580, 110,90);
+
+	ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fillRect (745,610, 5,20);
+
+	ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fillRect (760,610, 5,20);
+	
+
+	//BASE RESTAURANTE
+        ctx.fillStyle = "rgb(128,64,0)";
         ctx.fillRect (900,260, 350,410);
 	
-	ctx.fillStyle = "rgb(192,192,192)";
+	ctx.fillStyle = "rgb(178,121,79)";
         ctx.fillRect (900,320, 350,80);
 
-	ctx.fillStyle = "rgb(192,192,192)";
-        ctx.fillRect (1050,590, 50,80);
+	ctx.fillStyle = "rgb(84,42,0)";
+        ctx.fillRect (1005,570, 130,100);
 
+	ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fillRect (1060,610, 5,20);
+
+	ctx.fillStyle = "rgb(255,255,255)";
+        ctx.fillRect (1075,610, 5,20);
+
+	ctx.font = "55px Arial";
+	ctx.fillStyle = "brown";
+	ctx.fillText("Restaurante", 925, 380);
+
+	ctx.font = "55px Arial";
+	ctx.fillStyle = "brown";
+	ctx.strokeText("Restaurante", 925, 380);
 
 
 	//BASE CALLE
@@ -71,12 +128,14 @@
         ctx.fillStyle = "rgb(255,255,0)";
         ctx.fillRect (1120, 790, 80,30);
 
+
 	//SOL
 	ctx.beginPath();
         ctx.arc(1150,110,95,0,Math.PI*2,true);
         ctx.fillStyle = "rgb(255,255,0)";
         ctx.fill();  
 
+	//NUBES EN SOL
 	ctx.beginPath();
         ctx.arc(1150,170,30,0,Math.PI*2,true);
         ctx.fillStyle = "rgb(135,206,235)";
@@ -108,11 +167,42 @@
         ctx.fill();  
 
 
+	//NUBES
+	ctx.beginPath();
+        ctx.arc(685,70,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill();  
+
+	ctx.beginPath();
+        ctx.arc(730,80,40,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill(); 
+
+	ctx.beginPath();
+        ctx.arc(670,95,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill(); 
+
+	ctx.beginPath();
+        ctx.arc(700,115,30,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill(); 
+	
+	ctx.beginPath();
+        ctx.arc(730,110,35,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill(); 
+	
+	ctx.beginPath();
+        ctx.arc(770,100,35,0,Math.PI*2,true);
+        ctx.fillStyle = "rgb(135,206,235)";
+        ctx.fill(); 
+	
+
 
 	//ARBOL
 	ctx.fillStyle = "rgb(134,41,20)";
         ctx.fillRect (100,520, 30,150);
-
 
 	ctx.beginPath();
         ctx.arc(90,520,50,0,Math.PI*2,true);
